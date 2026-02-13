@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RaftCraft — Aras Gonul</title>
+  <meta name="description" content="RaftCraft - A physics-based co-op survival game in Godot.">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-logo">Aras Gonul</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="section project-header" style="padding-top: 8rem;">
+      <div class="container">
+        <div class="project-split-layout">
+          
+          <!-- Left: Intro -->
+          <div class="project-intro-left">
+            <div class="project-meta">
+              <span class="project-tag">Work in Progress</span>
+              <span class="project-year">2025 – Present</span>
+            </div>
+            <h1 class="project-title">RaftCraft</h1>
+            <p class="project-subtitle">A chaotic multiplayer First-Person Survival game where physics-based rowing is your only hope of escape.</p>
+          </div>
+
+          <!-- Right: Video/Image Placeholder -->
+          <div class="project-video-right">
+            <video controls style="width:100%; height:100%; border-radius:8px;">
+              <source src="images/raft-craft/rafting.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container container-narrow">
+        <div class="project-content" style="background:var(--surface);padding:1.5rem;border-radius:8px;border:1px solid var(--accent-dim);margin-bottom:2rem;">
+            <h3 style="margin-top:0;font-size:1rem;color:var(--accent);">Active Development</h3>
+            <p style="margin:0;font-size:0.9rem;">Currently in the prototyping phase, testing multiplayer mechanics and procedural generation with a live playtest group.</p>
+        </div>
+
+        <p class="project-content">
+          <strong>RaftCraft</strong> is a co-op survival adventure built in <strong>Godot Engine</strong>. You wake up in a hostile jungle with a savage tribe on your trail. Your team's only escape is a raft—but navigation isn't a simple button press. It's a physics-driven struggle where players must physically move to rowing positions and coordinate torque impulses to steer the raft down a treacherous, procedurally generated river.
+        </p>
+
+        <h3>Core Mechanics & Tech</h3>
+        <ul class="project-content">
+          <li><strong>Physics-Based Navigation:</strong>
+            <p>No standard WASD steering. The raft moves based on <strong>torque</strong> applied by players rowing at specific positions. I implemented a custom physics controller that calculates vectors from player input and applies forces to the raft rigidbody, requiring real teamwork to avoid obstacles.</p>
+          </li>
+          <li><strong>Procedural River Generation:</strong>
+            <p>The river isn't a static mesh. I engineered a system that generates the river path, waves, land, and obstacle placement along a spline, ensuring every run presents new navigation challenges.</p>
+          </li>
+          <li><strong>"Communication-First" Gameplay Loop:</strong>
+            <p>The game is designed to force communication. Systems like the <strong>Iron Nose</strong> (which breaks obstacles but shakes the raft, ragdolling unsecured players) or the <strong>Fish Rope</strong> (high risk/reward resource gathering) create situations where players must yell useful info ("Repairs needed!", "Hard left!", "Man overboard!") every 15 seconds to survive.</p>
+          </li>
+        </ul>
+
+        <h3>Procedural Animation & Physics</h3>
+        <div class="project-split-layout" style="margin-top: 1rem; align-items: flex-start; gap: 2rem;">
+          <div class="project-content" style="flex: 1;">
+            <p>
+              To heighten the immersion of a turbulent river ride, characters use <strong>Active Ragdolls</strong> and procedural animation layers. Instead of static idle loops, characters physically balance against the raft's movement, sway with the waves, and ragdoll realistically when the raft collides with heavy obstacles.
+            </p>
+          </div>
+          <div style="flex: 1; max-width: 300px;">
+             <video autoplay muted loop playsinline style="width: 100%; border-radius: 8px; border: 1px solid var(--border);">
+              <source src="images/raft-craft/procedural-anim.mp4" type="video/mp4">
+            </video>
+            <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.5rem;">Procedural Sway & Balance Test</p>
+          </div>
+        </div>
+
+        <h3>Multiplayer Testing</h3>
+        <div class="project-video-embed" style="height:auto; padding-bottom:0; margin-bottom: 2rem;">
+          <video controls style="width:100%; border-radius:8px; display:block;">
+            <source src="images/raft-craft/raft-together.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.5rem;">Co-op gameplay session testing rowing mechanics and physics synchronization.</p>
+        </div>
+
+        <h3>System Depth</h3>
+        <p class="project-content">
+          Beyond navigation, the game features a complex interaction system where items solve specific "core problems" (Navigation, Integrity, Enemies, Resource Pressure). For example, using <strong>Clay</strong> adds armor but freezes an inventory slot, while the <strong>Rope Launcher</strong> allows for rapid teammate rescue or sharp "bootleg turn" maneuvers at the cost of player stability.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container-narrow">
+        <div class="project-back">
+          <a href="index.html#projects" class="btn btn-ghost">← Back to Projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© <span id="year"></span> Aras Gonul.</p>
+  </footer>
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Title — Aras</title>
+  <meta name="description" content="Project description">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-logo">Aras</a>
+      <ul class="nav-links">
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Image/Video -->
+    <section class="project-hero">
+      <div class="project-hero-media">
+        <!-- Option 1: Image -->
+        <div style="width: 100%; height: 70vh; background: linear-gradient(135deg, #00d4aa 0%, #0d0e12 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; font-weight: 700;">Hero Image</div>
+        
+        <!-- Option 2: Video (uncomment and use instead of image) -->
+        <!-- <video class="project-hero-video" autoplay muted loop playsinline>
+          <source src="videos/project-trailer.mp4" type="video/mp4">
+        </video> -->
+        
+        <!-- Option 3: YouTube embed (uncomment and use) -->
+        <!-- <div class="project-hero-video-embed">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Project Header -->
+    <section class="section project-header">
+      <div class="container container-narrow">
+        <div class="project-meta">
+          <span class="project-tag">Published</span>
+          <span class="project-year">2024</span>
+        </div>
+        <h1 class="project-title">Project Title</h1>
+        <p class="project-subtitle">Short tagline or one-sentence description of your game</p>
+        <div class="project-links-header">
+          <a href="#" target="_blank" rel="noopener" class="btn btn-primary">Play on Itch.io</a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-ghost">Steam Store</a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Info -->
+    <section class="section section-alt">
+      <div class="container container-narrow">
+        <div class="project-info-grid">
+          <div>
+            <h3>My Role</h3>
+            <p>Solo Developer</p>
+          </div>
+          <div>
+            <h3>Engine / Tech</h3>
+            <p>Unity / C#</p>
+          </div>
+          <div>
+            <h3>Platform</h3>
+            <p>PC, Web</p>
+          </div>
+          <div>
+            <h3>Duration</h3>
+            <p>6 months</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Description -->
+    <section class="section">
+      <div class="container container-narrow">
+        <h2>About</h2>
+        <div class="project-content">
+          <p>
+            Write a detailed description of your game here. What's the concept? 
+            What makes it unique? What challenges did you face? What did you learn?
+          </p>
+          <p>
+            You can add multiple paragraphs, talk about the development process,
+            design decisions, technical challenges, or anything else relevant.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots/Gallery -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Screenshots</h2>
+        <div class="project-gallery">
+          <div style="aspect-ratio: 16/10; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">Screenshot 1</div>
+          <div style="aspect-ratio: 16/10; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">Screenshot 2</div>
+          <div style="aspect-ratio: 16/10; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">Screenshot 3</div>
+          <div style="aspect-ratio: 16/10; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">Screenshot 4</div>
+        </div>
+        <p style="text-align: center; margin-top: 1rem; color: var(--text-muted); font-size: 0.875rem;">
+          Replace these placeholders with actual screenshots using &lt;img src="images/screenshot-1.jpg"&gt;
+        </p>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="section">
+      <div class="container container-narrow">
+        <h2>Trailer / Gameplay</h2>
+        <div class="project-video">
+          <!-- Option 1: YouTube embed -->
+          <div class="project-video-embed">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--surface); color: var(--text-muted); border-radius: 8px;">
+              YouTube Video Embed<br>
+              Replace with: &lt;iframe src="https://www.youtube.com/embed/VIDEO_ID"&gt;
+            </div>
+          </div>
+          
+          <!-- Option 2: Self-hosted video (uncomment and use) -->
+          <!-- <video class="project-video-player" controls>
+            <source src="videos/gameplay.mp4" type="video/mp4">
+          </video> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Content -->
+    <section class="section section-alt">
+      <div class="container container-narrow">
+        <h2>Development Notes</h2>
+        <div class="project-content">
+          <p>
+            Add any additional sections you want: development blog posts, 
+            technical deep-dives, post-mortems, lessons learned, etc.
+          </p>
+          <h3>Technical Challenges</h3>
+          <p>Write about specific technical problems you solved...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Projects -->
+    <section class="section">
+      <div class="container container-narrow">
+        <div class="project-back">
+          <a href="index.html#projects" class="btn btn-ghost">← Back to Projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Aras. Built for GitHub Pages.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

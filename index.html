@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aras Gonul — Game Developer</title>
+  <meta name="description" content="Game developer portfolio — C++, Unreal Engine 5, gameplay systems. Based in Prague, Czechia.">
+  <meta property="og:title" content="Aras Gonul — Game Developer">
+  <meta property="og:description" content="Game Developer specializing in gameplay systems, technical implementation, and AI-assisted production workflows.">
+  <meta property="og:image" content="images/wizards-warlords/Wizards.png">
+  <meta property="og:url" content="https://arasgonul.github.io">
+  <link rel="icon" type="image/png" href="images/hero-collage/faviconwebsite.png">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav" aria-label="Main">
+      <a href="#home" class="nav-logo">Aras Gonul</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="hero-label">Game Developer · Prague, Czechia</p>
+        <h1>Hi, I'm <span class="highlight">Aras Gonul</span>.</h1>
+        <p class="hero-tagline">
+          Game Developer with 5+ years of experience shipping commercial titles and building complex, high-performance architecture. 
+          Specializing in Advanced C++ Gameplay Engineering, Unreal Engine 5, and technical design—delivering polished, optimized games from prototype to release.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-ghost">See my work</a>
+          <a href="resume.html" class="btn btn-ghost" target="_blank">View CV</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-slideshow">
+          <!-- Slides -->
+          <div class="slide active"><img src="images/hero-collage/mechworldmap.png" alt="Mech World Map"></div>
+          <div class="slide"><img src="images/hero-collage/mechbuild.png" alt="Mech Build"></div>
+          <div class="slide"><img src="images/hero-collage/wizards.png" alt="Wizards & Warlords"></div>
+          <div class="slide"><img src="images/hero-collage/hero1.png" alt="Hero"></div>
+          <div class="slide"><img src="images/hero-collage/royale-entre-mobile-3.png" alt="Kalahari UI"></div>
+          <div class="slide"><img src="images/hero-collage/screenshot-proto2-workflow.png" alt="Proto 2 Workflow"></div>
+          <div class="slide"><img src="images/hero-collage/screenshot-proto2-old.png" alt="Proto 2"></div>
+          <div class="slide"><img src="images/hero-collage/wizards-web.png" alt="Wizards Web"></div>
+          <div class="slide"><img src="images/hero-collage/flick3.png" alt="Heroic Flick"></div>
+          <div class="slide"><img src="images/hero-collage/thumbnail-2.png" alt="GeoRun"></div>
+          <div class="slide"><img src="images/hero-collage/gameplay.png" alt="Project Rogue Gameplay"></div>
+          <div class="slide"><img src="images/hero-collage/lootmech.png" alt="Mech Looting"></div>
+          <div class="slide"><img src="images/hero-collage/mechloot2.png" alt="Mech Inventory"></div>
+          <div class="slide"><img src="images/hero-collage/plants.png" alt="Garden Warden"></div>
+          <div class="slide"><img src="images/hero-collage/raft-image.png" alt="RaftCraft"></div>
+          <div class="slide"><img src="images/hero-collage/wizard3.png" alt="Wizards Spellcasting"></div>
+          
+          <!-- Indicators -->
+          <div class="slideshow-indicators">
+            <!-- JS will populate this or we can hardcode -->
+            <button class="indicator active" data-index="0"></button>
+            <button class="indicator" data-index="1"></button>
+            <button class="indicator" data-index="2"></button>
+            <button class="indicator" data-index="3"></button>
+            <button class="indicator" data-index="4"></button>
+            <button class="indicator" data-index="5"></button>
+            <button class="indicator" data-index="6"></button>
+            <button class="indicator" data-index="7"></button>
+            <button class="indicator" data-index="8"></button>
+            <button class="indicator" data-index="9"></button>
+            <button class="indicator" data-index="10"></button>
+            <button class="indicator" data-index="11"></button>
+            <button class="indicator" data-index="12"></button>
+            <button class="indicator" data-index="13"></button>
+            <button class="indicator" data-index="14"></button>
+            <button class="indicator" data-index="15"></button>
+          </div>
+          
+          <!-- Navigation Arrows -->
+          <button class="slide-nav prev" aria-label="Previous Slide">&#10094;</button>
+          <button class="slide-nav next" aria-label="Next Slide">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container container-narrow">
+        <h2 class="section-title">About</h2>
+        <div class="project-content">
+          <p>
+            I’ve engineered systems for everything from multi-million dollar productions to passionate indie collaborations and my own solo titles. 
+            Whether it's Unreal Engine, Unity, or Godot, I love the entire journey—taking a raw concept, prototyping unique mechanics, 
+            and driving development through design and iteration all the way to a published game. I don't just write code; I craft complete, polished experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 style="color: var(--accent); font-size: 1.125rem; margin-bottom: 1rem;">Engines & Languages</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-muted);">
+              <li>Unreal Engine 5 (Blueprints & C++)</li>
+              <li>Godot Engine (GDScript)</li>
+              <li>Unity (C#)</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 style="color: var(--accent); font-size: 1.125rem; margin-bottom: 1rem;">Core Competencies</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-muted);">
+              <li>Gameplay Systems & Mechanics</li>
+              <li>Generative AI Model Training</li>
+              <li>AI-Integrated Gameplay Systems</li>
+              <li>Mobile Development (Android)</li>
+              <li>Backend Integration (REST/GraphQL)</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 style="color: var(--accent); font-size: 1.125rem; margin-bottom: 1rem;">Tools</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; color: var(--text-muted);">
+              <li>Blender</li>
+              <li>Git</li>
+              <li>ComfyUI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card wip" onclick="window.location.href='project-garden-warden.html'">
+            <svg class="wip-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.06-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.49l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.06,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/></svg>
+            <div class="wip-overlay">
+              <div class="wip-text">Work in Progress</div>
+            </div>
+            <div class="project-media">
+              <img src="images/garden-warden/plants.png" alt="Garden Warden">
+            </div>
+            <div class="project-info">
+              <h3>Garden Warden</h3>
+              <p>Simulation-adventure. UE5 C++ — In-world inspection shaders, physics-based interaction, and scene-capture UI.</p>
+              <div class="project-links">
+                <a href="project-garden-warden.html" onclick="event.stopPropagation()">View Project →</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card wip" onclick="window.location.href='project-raft-craft.html'">
+            <svg class="wip-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.06-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.49l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.06,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/></svg>
+            <div class="wip-overlay">
+              <div class="wip-text">Work in Progress</div>
+            </div>
+            <div class="project-media">
+              <img src="images/raft-craft/raft-image.png" alt="RaftCraft">
+            </div>
+            <div class="project-info">
+              <h3>RaftCraft</h3>
+              <p>Chaotic physics co-op. Torque-based navigation, procedural river generation, and networked physics.</p>
+              <div class="project-links">
+                <a href="project-raft-craft.html" onclick="event.stopPropagation()">View Project →</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card demo" onclick="window.location.href='project-wizards-warlords.html'">
+            <svg class="demo-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+            <div class="demo-overlay">
+              <div class="demo-text">Playable Demo</div>
+            </div>
+            <div class="project-media">
+            <img src="images/wizards-warlords/wizards.png" alt="Wizards & Warlords">
+          </div>
+            <div class="project-info">
+              <h3>Wizards & Warlords</h3>
+              <p>Top-down bullet hell & boss fights. Unreal Engine 5 (Advanced Blueprints) — Scalable ability system and AI behavior trees.</p>
+              <div class="project-links">
+                <a href="project-wizards-warlords.html" onclick="event.stopPropagation()">View Project →</a>
+                <a href="https://www.youtube.com/watch?v=Z9Pie6jkx28" target="_blank" rel="noopener" onclick="event.stopPropagation()">Trailer</a>
+                <a href="https://gamejolt.com/games/wizardsandwarlords/877705" target="_blank" rel="noopener" onclick="event.stopPropagation()">GameJolt</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" onclick="window.location.href='project-heroic-flick.html'">
+            <div class="project-media">
+            <img src="images/heroic-flick/game-icon-512.png" alt="Heroic Flick">
+          </div>
+            <div class="project-info">
+              <h3>Heroic Flick</h3>
+              <p>Procedural Endless Riser. Procedural generation, enemy AI, progression. Godot, Android.</p>
+              <div class="project-links">
+                <a href="project-heroic-flick.html" onclick="event.stopPropagation()">View Project →</a>
+                <a href="https://www.youtube.com/watch?v=Dv_M6-jbjCw" target="_blank" rel="noopener" onclick="event.stopPropagation()">Trailer</a>
+                <a href="https://arasgonuldev.itch.io/heroicflick" target="_blank" rel="noopener" onclick="event.stopPropagation()">Itch.io</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" onclick="window.location.href='project-georun.html'">
+            <div class="project-media">
+            <img src="images/georun/game-icon.png" alt="GeoRun">
+          </div>
+            <div class="project-info">
+              <h3>GeoRun</h3>
+              <p>Reflex-driven adventure designed for younger audiences. Biomes, elemental mechanics. Godot, Android.</p>
+              <div class="project-links">
+                <a href="project-georun.html" onclick="event.stopPropagation()">View Project →</a>
+                <a href="https://www.youtube.com/watch?v=IuAoBOl86jI" target="_blank" rel="noopener" onclick="event.stopPropagation()">Trailer</a>
+                <a href="https://arasgonuldev.itch.io/georun" target="_blank" rel="noopener" onclick="event.stopPropagation()">Itch.io</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" onclick="window.location.href='project-proto2.html'">
+            <div class="project-media">
+            <img src="images/proto2/proto-1-vegetable-aisle.png" alt="Proto 2">
+          </div>
+            <div class="project-info">
+              <h3>Proto 2</h3>
+              <p>Runtime Generation Engine. Text → 3D levels. MixieAI, ComfyUI, generative AI.</p>
+              <div class="project-links">
+                <a href="project-proto2.html" onclick="event.stopPropagation()">View Project →</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" onclick="window.location.href='project-mech3.html'">
+            <div class="project-media">
+            <img src="images/mech3/reskin-combined.png" alt="Kalahari Depths & Mech3">
+          </div>
+            <div class="project-info">
+              <h3>Kalahari Depths & Mech3</h3>
+              <p>Match-3 evolution from Mech Industries ($2M+ funding) to Zelgor acquisition. Engineered custom difficulty algorithms and power-up logic.</p>
+              <div class="project-links">
+                <a href="project-mech3.html" onclick="event.stopPropagation()">View Project →</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card wip ai" onclick="window.location.href='project-rogue.html'">
+            <!-- AI Icon (Left) -->
+            <svg class="ai-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M15 9H9v6h6V9zm-2 4h-2v-2h2v2zm8-2V9h-2V7c0-1.1-.9-2-2-2h-2V3h-2v2h-2V3H9v2H7c-1.1 0-2 .9-2 2v2H3v2h2v2H3v2h2v2c0 1.1.9 2 2 2h2v2h2v-2h2v2h2v-2h2c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2zm-4 6H7V7h10v10z"/></svg>
+            <!-- WIP Icon (Right) -->
+            <svg class="wip-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.06-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.49l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.06,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/></svg>
+            
+            <div class="ai-overlay">
+              <div class="ai-text">AI Integrated Gameplay</div>
+              <div class="wip-text">Work in Progress</div>
+            </div>
+            <div class="project-media" style="aspect-ratio: 1/1;">
+              <img src="images/project-rogue/gameplay.png" alt="Unnamed Project">
+            </div>
+            <div class="project-info">
+              <h3>Unnamed Project</h3>
+              <p>AI-Native Village Sim. NPCs with active memory and no context loss, running fully local LLM inference on GPU.</p>
+              <div class="project-links">
+                <a href="project-rogue.html" onclick="event.stopPropagation()">View Project →</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" onclick="window.location.href='project-mech-royale.html'">
+            <div class="project-media">
+              <img src="images/mech-royale/mechroyale1.png" alt="MechRoyale">
+            </div>
+            <div class="project-info">
+              <h3>MechRoyale</h3>
+              <p>Battle Royale game from Mech Industries.</p>
+              <div class="project-links">
+                <a href="project-mech-royale.html" onclick="event.stopPropagation()">View Project →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <ul class="experience-list">
+          <li class="experience-item">
+            <span class="experience-company">MixieAI</span>
+            <span class="experience-role">Game Developer / AI Specialist</span>
+            <span class="experience-period">2024 – Jun 2025</span>
+            <span class="experience-impact experience-impact-acquired">Acquired by Zelgor (NetCapital, NASDAQ: NCPL)</span>
+          </li>
+          <li class="experience-item">
+            <span class="experience-company">Mech Industries</span>
+            <span class="experience-role">Game Developer</span>
+            <span class="experience-period">2022 – 2023</span>
+            <span class="experience-impact">$2M+ Raised</span>
+          </li>
+          <li class="experience-item">
+            <span class="experience-company">Rootales Studio</span>
+            <span class="experience-role">Game Developer</span>
+            <span class="experience-period">2019 – 2022</span>
+            <span class="experience-impact">2 Published Mobile Titles</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container container-narrow">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Open to opportunities in game studios. Based in Prague, Czechia.</p>
+        <div class="contact-links">
+          <a href="mailto:arasgonul@gmail.com" class="contact-link">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>arasgonul@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/aras-gonul" target="_blank" rel="noopener" class="contact-link">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://arasgonuldev.itch.io" target="_blank" rel="noopener" class="contact-link">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+            <span>Itch.io</span>
+          </a>
+          <a href="https://www.youtube.com/@ArasGonulDev" target="_blank" rel="noopener" class="contact-link">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg>
+            <span>YouTube</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Aras Gonul.</p>
+  </footer>
+
+  <script src="js/main.js?v=3"></script>
+</body>
+</html>

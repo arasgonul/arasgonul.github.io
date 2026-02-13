@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Aras Gonul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1c24;
+      --text-muted: #555;
+      --accent: #008f72; /* Darker teal for print readability */
+      --border: #ddd;
+    }
+    body {
+      font-family: "Outfit", sans-serif;
+      line-height: 1.5;
+      color: var(--text);
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+    @media print {
+      body { padding: 0; max-width: 100%; }
+      .no-print { display: none !important; }
+      a { text-decoration: none; color: black; }
+    }
+    
+    header { border-bottom: 2px solid var(--text); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+    h1 { margin: 0; font-size: 2.5rem; line-height: 1; text-transform: uppercase; letter-spacing: -0.02em; }
+    .subtitle { font-family: "JetBrains Mono", monospace; color: var(--accent); font-size: 1.1rem; margin-top: 0.5rem; font-weight: 600; }
+    .contact-info { margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted); display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    
+    section { margin-bottom: 2rem; }
+    h2 { font-size: 1.25rem; text-transform: uppercase; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 1rem; letter-spacing: 0.05em; color: var(--text-muted); }
+    
+    .job { margin-bottom: 1.5rem; }
+    .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.25rem; }
+    .job-title { font-weight: 700; font-size: 1.1rem; }
+    .job-company { font-weight: 600; color: var(--accent); }
+    .job-date { font-family: "JetBrains Mono", monospace; font-size: 0.85rem; color: var(--text-muted); }
+    .job-impact { font-family: "JetBrains Mono", monospace; font-size: 0.85rem; color: var(--accent); margin-bottom: 0.5rem; display: block; }
+    
+    ul { margin: 0; padding-left: 1.2rem; }
+    li { margin-bottom: 0.25rem; }
+    
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .skill-category h3 { font-size: 1rem; margin: 0 0 0.5rem; color: var(--accent); }
+    
+    .print-btn {
+      position: fixed; top: 20px; right: 20px;
+      padding: 10px 20px; background: var(--text); color: white;
+      border: none; border-radius: 4px; cursor: pointer; font-weight: 600;
+    }
+    .print-btn:hover { background: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <button class="print-btn no-print" onclick="window.print()">Save as PDF</button>
+
+  <header>
+    <h1>Aras Gonul</h1>
+    <div class="subtitle">Game Developer & AI Specialist</div>
+    <div class="contact-info">
+      <span>Prague, Czechia</span>
+      <span>arasgonul@gmail.com</span>
+      <span>linkedin.com/in/aras-gonul</span>
+      <span>arasgonul.github.io</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p>
+      Game Developer with 5+ years of experience shipping commercial titles and building complex, high-performance architecture. 
+      Specializing in Advanced C++ Gameplay Engineering, Unreal Engine 5, and technical design—delivering polished, optimized games from prototype to release.
+    </p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">Game Developer / AI Specialist</span> · <span class="job-company">MixieAI</span></div>
+        <span class="job-date">2024 – Jun 2025</span>
+      </div>
+      <span class="job-impact">Acquired by Zelgor (NetCapital, NASDAQ: NCPL)</span>
+      <ul>
+        <li>Led client-side development of a Runtime Generation Engine enabling 3D level generation from text prompts.</li>
+        <li>Developed a fully playable racing game on generated levels, implementing AI racer NPCs, checkpoint systems, and win/lose logic.</li>
+        <li>Designed AI-assisted pipelines (ComfyUI) for generating diverse 2D/3D game assets.</li>
+        <li>Developed "Mech3" (Match-3), handling core logic, difficulty progression, and AI-reskinning.</li>
+        <li>Built in-engine tools for dynamic manipulation of AI-generated objects.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">Game Developer</span> · <span class="job-company">Mech Industries</span></div>
+        <span class="job-date">2022 – 2023</span>
+      </div>
+      <span class="job-impact">Platform Raised $2M+ in Funding</span>
+      <ul>
+        <li>Developed the metaverse's first minigame ("Kalahari Depths"), a Match-3 currency miner.</li>
+        <li>Contributed to the main Battle Royale game, including gameplay, server logic, UI/UX, and audio integration.</li>
+        <li>Developed an in-game tool for executives to edit and refine the main metaverse map.</li>
+        <li>Built an interactive NFT viewer tool allowing players to inspect their 3D game characters.</li>
+        <li>Implemented loot box mechanics, reward distribution, and player progression systems.</li>
+        <li>Integrated Web3 wallet functionality (MetaMask) for seamless blockchain interaction.</li>
+        <li>Implemented secure credit card processing systems for fiat transactions.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">Game Developer</span> · <span class="job-company">Rootales Studio</span></div>
+        <span class="job-date">2019 – 2022</span>
+      </div>
+      <span class="job-impact">Designed & Deployed 2 Mobile Titles</span>
+      <ul>
+        <li><strong>Heroic Flick:</strong> Designed procedural generation systems for infinite verticality, reactive enemy AI, and a high-score progression system with 8 unlockable characters with unique special abilities.</li>
+        <li><strong>GeoRun:</strong> Engineered a mobile puzzle-adventure with a save/load system, dynamic biome transitions, and complex element-combination mechanics.</li>
+        <li>Managed full mobile development lifecycle from prototyping to Play Store deployment.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Key Projects</h2>
+
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">Garden Warden</span> · <span class="job-company">Unreal Engine 5 (C++)</span></div>
+        <span class="job-date">In Development</span>
+      </div>
+      <span class="job-impact">Simulation Systems & Technical Art</span>
+      <ul>
+        <li>Engineered an "In-World Inspection System" in C++ that dynamically modifies Material Instances to render stress signals (cracks, withering) visible only through a specific viewport/lens mechanic.</li>
+        <li>Implemented a physics-based projectile minigame using vector math to calculate launch trajectories, incorporating biome-specific physical material overrides (friction, bounce).</li>
+        <li>Developed a real-time 3D UI pipeline using Scene Capture components to project live, animated character meshes into 2D dialogue interfaces.</li>
+      </ul>
+    </div>
+    
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">RaftCraft</span> · <span class="job-company">Godot (Multiplayer Physics)</span></div>
+        <span class="job-date">In Development</span>
+      </div>
+      <span class="job-impact">Co-op Survival & Procedural Generation</span>
+      <ul>
+        <li>Developing a physics-based vehicle controller where raft navigation is driven by torque impulses calculated from player rowing actions (vectors based on player position/input).</li>
+        <li>Implemented a procedural river generation system that dynamically spawns terrain meshes, water fluid simulation, and gameplay obstacles along a continuous spline.</li>
+        <li>Implementing procedural character animation and active ragdoll physics to simulate realistic reactions to raft momentum and impact forces.</li>
+        <li>Engineering a networked buoyancy system where raft integrity and weight distribution directly affect movement physics in a multiplayer environment.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">Unnamed Project</span> · <span class="job-company">Godot (Local AI R&D)</span></div>
+        <span class="job-date">2025 – Present</span>
+      </div>
+      <span class="job-impact">Integrated Local LLM Execution on NVIDIA GPUs</span>
+      <ul>
+        <li>Engineered a fully local AI inference pipeline enabling NPCs to generate context-aware dialogue with zero cloud dependency.</li>
+        <li>Developed a persistent memory system allowing characters to recall player interactions across game sessions.</li>
+        <li>Optimized GPU memory usage for real-time performance alongside gameplay logic.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div><span class="job-title">Wizards & Warlords</span> · <span class="job-company">Unreal Engine 5 (Advanced Blueprints)</span></div>
+        <span class="job-date">2024 – Present</span>
+      </div>
+      <span class="job-impact">Complex Bullet Hell & RTS Mechanics</span>
+      <ul>
+        <li>Implemented a locomotion system handling complex animation states and responsive character movement.</li>
+        <li>Engineered live cinematics sequences with seamless transitions into multi-phase boss fights.</li>
+        <li>Developed core bullet-hell gameplay mechanics, managing projectile logic and player interaction systems.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Engines & Languages</h3>
+        <ul>
+          <li>Unreal Engine 5 (Blueprints & C++)</li>
+          <li>Godot Engine (GDScript)</li>
+          <li>Unity (C#)</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Expertise & Tools</h3>
+        <ul>
+          <li>Gameplay Systems & Architecture</li>
+          <li>Generative AI Model Training</li>
+          <li>AI-Integrated Gameplay Systems</li>
+          <li>Mobile Development (Android)</li>
+          <li>Backend (REST, GraphQL, Web3)</li>
+          <li>Git, Blender, ComfyUI</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>

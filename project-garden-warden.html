@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garden Warden — Aras Gonul</title>
+  <meta name="description" content="Simulation-driven gardening game. UE5, C++.">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-logo">Aras Gonul</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="section project-header" style="padding-top: 8rem;">
+      <div class="container">
+        <div class="project-split-layout">
+          <div class="project-intro-left">
+            <div class="project-meta">
+              <span class="project-tag">In Development</span>
+              <span class="project-year">2024 – Present</span>
+            </div>
+            <h1 class="project-title">Garden Warden</h1>
+            <p class="project-subtitle">Immersive Simulation focused on ecological restoration. UE5 C++ — In-world inspection shaders, physics-based interaction, and scene-capture UI.</p>
+          </div>
+          <div class="project-video-right">
+            <video controls autoplay muted loop playsinline style="width:100%; height:100%; border-radius:8px;">
+              <source src="images/garden-warden/material-repair.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt">
+      <div class="container container-narrow">
+        <div class="project-content" style="background:var(--surface);padding:1.5rem;border-radius:8px;border:1px solid var(--accent-dim);margin-bottom:2rem;">
+            <h3 style="margin-top:0;font-size:1rem;color:var(--accent);">Work In Progress</h3>
+            <p style="margin:0;font-size:0.9rem;">This project is currently in active development. The mechanics below are fully implemented in C++.</p>
+        </div>
+        
+        <p class="project-content">
+          <strong>Garden Warden</strong> is a simulation-adventure game built in <strong>Unreal Engine 5 using C++</strong>. You play as a hero with gardening powers who washes ashore on a mysterious island, helping distinct communities resolve their problems through ecological restoration. The game prioritizes immersive in-world mechanics over traditional UI, immersing the player in the physical act of gardening.
+        </p>
+
+        <h3>Technical Implementation</h3>
+        <ul class="project-content">
+          <li><strong>In-World Inspection System (C++ & Shaders):</strong>
+            <p>Instead of UI meters, plant needs are hidden. I engineered a "Lens Mechanic" that allows players to inspect plants in 3D. This system dynamically manipulates <strong>Material Instances</strong> to render specific stress signals—browning leaves, cracked planters, dry soil—that are <em>only</em> visible through the lens viewport.</p>
+          </li>
+          <li><strong>Physics-Based Planting Mechanic:</strong>
+            <p>Planting is not a single click. I implemented a physics-based minigame where players adjust <strong>pitch, yaw, and launch power</strong> to land seeds in specific planter openings. The system calculates trajectories in real-time and accounts for biome-specific physical materials (e.g., sticky mud, bouncy fungal floors, sliding gravel).</p>
+          </li>
+          <li><strong>Real-Time 3D Dialogue System:</strong>
+            <p>Developed a custom UI pipeline using <strong>Scene Capture 2D</strong> components. Instead of static 2D avatars, the dialogue system captures the actual 3D NPC—preserving their current animation state and lighting—and projects it onto the 2D dialogue interface for seamless immersion.</p>
+            <div style="margin-top: 1rem;">
+              <video controls style="width: 100%; border-radius: 8px; border: 1px solid var(--border);">
+                <source src="images/garden-warden/dialogue-capture.mp4" type="video/mp4">
+              </video>
+              <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.5rem;">Scene Capture 2D Dialogue Test</p>
+            </div>
+          </li>
+        </ul>
+
+        <h3>Gallery</h3>
+        <div class="project-gallery">
+          <img src="images/garden-warden/main-menu.png" alt="Garden Warden Main Menu" class="project-gallery-image">
+          <img src="images/garden-warden/plants.png" alt="Garden Warden Gameplay" class="project-gallery-image">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© <span id="year"></span> Aras Gonul.</p>
+  </footer>
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>

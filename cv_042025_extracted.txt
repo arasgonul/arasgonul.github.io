@@ -1,0 +1,144 @@
+Aras Gonul
+Game Developer & AI Specialist
+arasgonul@gmail.com
+ 
++420 725 389 355
+ 
+Czechia
+ 
+linkedin.com/in/aras-gonul/
+ 
+behance.net/arasgonul
+ 
+Summary
+Highly motivated Game Developer with 5+ years of experience specializing in innovative AI-integrated 
+gameplay and system development. Proven ability to design and implement complex client-side systems, 
+develop complete game features, and leverage generative AI for content creation. Formerly a Professional Chef 
+for 10 years, bringing honed creativity, attention to detail, and ability to thrive under pressure.
+Professional Experience
+Game Developer / AI Specialist, MixieAI
+•Led the client-side development of a pseudo-engine enabling players to generate 
+3D game levels via text prompts, effectively creating a prompt-to-video game level 
+system.
+•Partnered with Lead AI Developer to design and strategize complex generative AI 
+workflows using ComfyUI, incorporating advanced techniques and custom 
+models (including their design and training) for video game level creation and 
+asset generation.
+03/2024 – Present
+•Designed and executed AI-assisted pipelines for generating diverse 2D and 3D 
+game assets (match-3 pieces, enemy models/animations, sound effects, music) by 
+leveraging multiple AI models.
+•Successfully leveraged these AI-assisted asset pipelines to fully reskin the Match-3 
+game ("Mech3"), integrating AI-generated 2D and 3D assets.
+•Developed the complete client-side implementation of the Match-3 game 
+("Mech3"), including core gameplay logic, dynamic obstacle/reward types, and 
+adaptive difficulty progression.
+•Developed a technical demo featuring AI-generated 3D race tracks and core racing 
+logic (AI cars, laps, checkpoints, win/lose conditions), demonstrating the 
+application of the prompt-to-level system to create playable experiences with 
+dynamically placed game elements.
+•Built an in-engine editing widget allowing dynamic manipulation (move, rotate, 
+scale, adjust physics) of AI-generated 3D objects within levels.
+•Assisted in the training and refinement of AI models specifically for game content 
+generation.
+Game Developer, Mech Industries
+•Developed the metaverse's first minigame, a Match-3 style game focused on 
+mining in-game currency.
+•Contributed to the development of the main Battle Royale style game.
+06/2022 – 10/2023
+•Established a library of customizable UI/UX elements for consistent user interface 
+design throughout the metaverse.
+•Contributed to the development of a player viewer tool for detailed character 
+exploration.
+•Developed tools for executives to manage and refine the metaverse's primary 
+map.
+•Implemented loot box mechanics for the Match-3 minigame, managing rewards 
+and player progression.
+
+---PAGE---
+
+•Integrated loot box systems and reward distribution logic for the Battle Royale 
+game.
+•Worked on game audio integration (sounds).
+•Developed game server calculations for winners and reward distribution.
+•Collaborated on backend operations, including integrating Metamask 
+connections, NFTs, crypto wallet interactions, and verification processes.
+•Implemented Restful APIs and GraphQL integrations for metaverse games.
+•Created an analytics gathering system to monitor crucial metrics (player base, 
+gameplay times, currency, success rates, repair costs).
+Game Developer, Rootales Studio
+Developed and deployed two separate mobile games: "Heroic Flick" and "GeoRun".
+Heroic Flick:
+10/2019 – 04/2022
+•Developed and deployed a casual endless riser game, implementing core features 
+such as Procedural Generation (maps, obstacles, enemies), Enemy AI, and an 
+interactive In-game Tutorial.
+•Designed and integrated player progression systems, including Highscore 
+Save/Load and Unlockable Heroes with unique abilities.
+GeoRun:
+•Developed a mobile adventure game featuring a Save/Load system, Diverse 
+Biomes & Difficulties, and user-friendly Switchable UI Button Placement.
+•Designed and implemented a core gameplay mechanic centered around 16 
+unique Element Combinations for strategic problem-solving.
+Game Links:
+Heroic Flick:
+https://play.google.com/store/apps/details?id=org.godotengine.heroicflick
+GeoRun: 
+https://play.google.com/store/apps/details?id=org.godotengine.volcanoisland
+Education
+Bachelor Degree, Gastronomy and Culinary Arts, 
+Istanbul Bilgi University & Kendall College
+Leveraged 10 years of experience as a Professional Chef to cultivate exceptional 
+creativity, meticulous attention to detail, and the ability to perform effectively 
+under high-pressure environments – skills directly applicable to game 
+development.
+2014 – 2018
+Coursework in Physics, METU (Middle East Technical University) 2011 – 2014
+
+---PAGE---
+
+Technical Skills & Expertise
+Programming/Scripting
+•GDScript
+•Blueprints (Unreal Engine Visual Scripting)
+•Proficient in rapid prototyping and language 
+acquisition using AI-assisted development tools in 
+any language (e.g., C++, C#, Python).
+Technical Expertise Areas
+•Client-side Development
+•Backend Operations
+•Game Server Logic
+•Mobile Development (Android)
+•Generative AI Workflow Design (ComfyUI)
+•AI Model Training & Refinement
+•Procedural Content Generation
+•Game Systems Implementation (Save/Load, 
+Progression, Dynamic Systems)
+•UI/UX Implementation
+•In-engine Tool Development
+•Analytics Implementation
+•Optimization
+APIs & Protocols
+•RESTful API Implementation
+•GraphQL Implementation
+Game Engines
+•Godot Engine
+•Unreal Engine
+Implemented Systems & Integrations
+•Loot Box Systems
+•Metamask Integration
+•NFT & Crypto Wallet Integration
+Tools & Software
+•Blender (Used for AI Training Data Preparation)
+•ComfyUI
+•Cursor (AI-Assisted Coding Environment)
+•Version Control: Git (GitHub)
+Personal Projects
+Wizards & Warlords
+Developed a solo game demo in Unreal Engine showcasing Top-down Hack & Slash 
+/ Bullet Hell mechanics.
+Key features implemented include:
+01/2024 – Present
+Boss Fights, Artifact Collection, Army Summoning, Unlockable Soldier Types & 
+Characters, Resource Management, and Strategic Battles.
+Project Link (Trailer): https://www.youtube.com/watch?v=Z9Pie6jkx28

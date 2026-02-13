@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalahari Depths & Mech3 — Aras Gonul</title>
+  <meta name="description" content="From Kalahari Depths (Mech Industries) to Mech3 (MixieAI). Match-3 game development and AI reskin.">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-logo">Aras Gonul</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="section project-header" style="padding-top: 8rem;">
+      <div class="container">
+        <div class="project-split-layout">
+          <div class="project-intro-left">
+            <div class="project-meta">
+              <span class="project-tag">Published & Acquired</span>
+              <span class="project-year">2022 – 2025</span>
+            </div>
+            <h1 class="project-title">Kalahari Depths & Mech3</h1>
+            <p class="project-subtitle">The evolution of a Match-3 game: From "Kalahari Depths" (Mech Industries) to the AI-reskinned "Mech3" (MixieAI).</p>
+            <p style="margin-top:0.5rem;color:var(--text-muted);">Acquired by Zelgor (NetCapital, NASDAQ: NCPL).</p>
+          </div>
+          <div class="project-video-right">
+            <video class="project-hero-video" autoplay muted loop playsinline controls style="width: 100%; height: 100%; object-fit: cover;">
+              <source src="images/mech3/mech3-gameplay.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section section-alt">
+      <div class="container container-narrow">
+        <h2 class="section-title">The Evolution</h2>
+        <p class="project-content">
+          What started as <strong>Kalahari Depths</strong>—the first minigame for the Mech Industries metaverse (contributing to over $2M raised)—was later evolved into <strong>Mech3</strong> at MixieAI.
+        </p>
+        <p class="project-content">
+          I led the development of the original game, including core logic, loot box systems, and UI. Later, at MixieAI, I integrated generative AI pipelines to completely reskin the game with new 3D and 2D assets, while also optimizing it for Telegram deployment and adding difficulty progression and power-ups.
+        </p>
+
+        <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Mech3 (AI Reskin & Telegram Version)</h3>
+        <div class="project-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+          <img src="images/mech3/reskin-combined.png" alt="Mech3 Reskin Comparison" class="project-gallery-image">
+          <img src="images/mech3/telegram-menu.png" alt="Mech3 Telegram Menu" class="project-gallery-image">
+        </div>
+
+        <h3 style="margin-top: 3rem; margin-bottom: 1rem;">Original: Kalahari Depths (Mech Industries)</h3>
+        <div class="project-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+          <!-- Verticals on top row -->
+          <img src="images/kalahari-depths/kalahari.png" alt="Kalahari Depths Gameplay" class="project-gallery-image" style="aspect-ratio: 9/16; object-fit: cover;">
+          <img src="images/kalahari-depths/match-3-menu-mobile-1.png" alt="Kalahari Menu" class="project-gallery-image" style="aspect-ratio: 9/16; object-fit: cover;">
+          <img src="images/kalahari-depths/royale-entre-mobile-3.png" alt="Kalahari UI" class="project-gallery-image" style="aspect-ratio: 9/16; object-fit: cover;">
+          
+          <!-- Horizontal full width below -->
+          <img src="images/kalahari-depths/difficultymap.png" alt="Difficulty Map" class="project-gallery-image" style="grid-column: 1 / -1; width: 100%; aspect-ratio: 16/9; object-fit: cover;">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container-narrow">
+        <div class="project-back">
+          <a href="index.html#projects" class="btn btn-ghost">← Back to Projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© <span id="year"></span> Aras Gonul.</p>
+  </footer>
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>
