@@ -119,7 +119,7 @@ a:hover { text-decoration: underline; }
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-  background: #000; /* Black background for letterboxing */
+  background: transparent; /* Removed black background */
 }
 
 .slide {
@@ -134,7 +134,7 @@ a:hover { text-decoration: underline; }
   align-items: center;
   justify-content: center;
   pointer-events: none;
-  background: #000; /* Ensure slide background is black */
+  background: transparent; /* Removed black background */
 }
 
 .slide.active {
@@ -260,15 +260,15 @@ a:hover { text-decoration: underline; }
 /* --- Skills Grid --- */
 .skills-grid {
   display: flex;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: center; /* Center the items */
+  gap: 4rem; /* More space between columns */
   margin-top: 2rem;
   flex-wrap: wrap;
 }
 
 .skill-category {
-  flex: 1;
-  min-width: 200px; /* Allow shrinking a bit more */
+  flex: 0 1 auto; /* Don't stretch, just fit content */
+  min-width: 200px;
 }
 
 /* --- Projects grid --- */
@@ -681,7 +681,22 @@ a:hover { text-decoration: underline; }
   position: relative;
 }
 
-.wip-icon, .demo-icon, .ai-icon {
+.project-card.mobile {
+  border-color: #ff9f43; /* Orange */
+  position: relative;
+}
+
+.project-card.crossplat {
+  border-color: #2979ff; /* Tech Blue */
+  position: relative;
+}
+
+.project-card.engine {
+  border-color: #ff5252; /* Red */
+  position: relative;
+}
+
+.wip-icon, .demo-icon, .ai-icon, .mobile-icon, .crossplat-icon, .engine-icon {
   position: absolute;
   top: 10px;
   width: 24px;
@@ -691,35 +706,51 @@ a:hover { text-decoration: underline; }
   transition: transform 0.5s ease;
 }
 
-.wip-icon, .demo-icon { right: 10px; }
+.wip-icon, .demo-icon, .mobile-icon, .crossplat-icon, .engine-icon { right: 10px; }
 .ai-icon { left: 10px; } /* Move AI icon to left */
 
 .wip-icon { color: #ffd700; }
 .demo-icon { color: #bf5af2; }
 .ai-icon { color: #00e5ff; }
+.mobile-icon { color: #ff9f43; }
+.crossplat-icon { color: #2979ff; }
+.engine-icon { color: #ff5252; }
 
 /* Special style for dual WIP + AI card */
 .project-card.wip.ai {
   border-width: 2px;
   border-style: solid;
   border-image: linear-gradient(to right, #00e5ff, #ffd700) 1;
-  /* Fallback/Radius fix hack: border-image kills radius, so we use a pseudo-element if we want radius, 
-     but for simplicity in this codebase, we might accept square corners or use box-shadow */
-  border-image: none; /* Reset for safety */
+  border-image: none;
   border-color: transparent;
   background: linear-gradient(var(--surface), var(--surface)) padding-box,
               linear-gradient(45deg, #00e5ff, #ffd700) border-box;
   border: 2px solid transparent;
-  border-radius: 12px; /* Needs to match */
+  border-radius: 12px;
+}
+
+/* Special style for dual AI + Engine card */
+.project-card.ai.engine {
+  border-width: 2px;
+  border-style: solid;
+  border-image: none;
+  border-color: transparent;
+  background: linear-gradient(var(--surface), var(--surface)) padding-box,
+              linear-gradient(45deg, #00e5ff, #ff5252) border-box;
+  border: 2px solid transparent;
+  border-radius: 12px;
 }
 
 .project-card.wip:hover .wip-icon,
 .project-card.demo:hover .demo-icon,
-.project-card.ai:hover .ai-icon {
+.project-card.ai:hover .ai-icon,
+.project-card.mobile:hover .mobile-icon,
+.project-card.crossplat:hover .crossplat-icon,
+.project-card.engine:hover .engine-icon {
   transform: rotate(15deg) scale(1.1);
 }
 
-.wip-overlay, .demo-overlay, .ai-overlay {
+.wip-overlay, .demo-overlay, .ai-overlay, .mobile-overlay, .crossplat-overlay, .engine-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -740,11 +771,14 @@ a:hover { text-decoration: underline; }
 
 .project-card.wip:hover .wip-overlay,
 .project-card.demo:hover .demo-overlay,
-.project-card.ai:hover .ai-overlay {
+.project-card.ai:hover .ai-overlay,
+.project-card.mobile:hover .mobile-overlay,
+.project-card.crossplat:hover .crossplat-overlay,
+.project-card.engine:hover .engine-overlay {
   opacity: 1;
 }
 
-.wip-text, .demo-text, .ai-text {
+.wip-text, .demo-text, .ai-text, .mobile-text, .crossplat-text, .engine-text {
   font-family: var(--font-mono);
   font-weight: 700;
   font-size: 1.25rem;
@@ -762,10 +796,16 @@ a:hover { text-decoration: underline; }
 .wip-text { color: #ffd700; border-color: #ffd700; }
 .demo-text { color: #bf5af2; border-color: #bf5af2; }
 .ai-text { color: #00e5ff; border-color: #00e5ff; }
+.mobile-text { color: #ff9f43; border-color: #ff9f43; }
+.crossplat-text { color: #2979ff; border-color: #2979ff; }
+.engine-text { color: #ff5252; border-color: #ff5252; }
 
 .project-card.wip:hover .wip-text,
 .project-card.demo:hover .demo-text,
-.project-card.ai:hover .ai-text {
+.project-card.ai:hover .ai-text,
+.project-card.mobile:hover .mobile-text,
+.project-card.crossplat:hover .crossplat-text,
+.project-card.engine:hover .engine-text {
   transform: translateY(0);
 }
 
@@ -893,13 +933,34 @@ a:hover { text-decoration: underline; }
   }
   .nav-toggle { display: flex; }
 
-  .hero-layout {
+  .hero {
     flex-direction: column;
-    align-items: flex-start;
+    padding-top: 8rem; /* More space for fixed header */
+    text-align: center;
   }
-  .hero-media {
+
+  .hero-content {
     max-width: 100%;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex: none;
+  }
+
+  .hero-tagline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .hero-media {
+    width: 100%;
+    flex: none;
+  }
+  
+  .hero-slideshow {
+    height: 300px; /* Smaller height for mobile */
   }
   
   .project-hero {
